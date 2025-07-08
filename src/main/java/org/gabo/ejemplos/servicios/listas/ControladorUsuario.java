@@ -1,7 +1,5 @@
 package org.gabo.ejemplos.servicios.listas;
 
-import java.util.ArrayList;
-
 import org.gabo.ejemplos.servicios.listas.database.Usuario;
 import org.gabo.ejemplos.servicios.listas.dto.UsuarioDTO;
 import org.gabo.ejemplos.servicios.listas.servicios.ServiciosUsuario;
