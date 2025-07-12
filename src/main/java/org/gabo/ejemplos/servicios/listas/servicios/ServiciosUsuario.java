@@ -12,8 +12,21 @@ public class ServiciosUsuario {
     @Autowired
     private Repositorio repo;
 
+    public Usuario getUsuario(Long id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Usuario no encontrado con id: " + id));
+    }
+
     public Usuario guardaUsuario(Usuario u) {
         return repo.save(u);
+    }
+
+    public Usuario actualizaUsuario(Usuario u) {
+        return repo.save(u);
+    }
+
+    public void borraUsuario(Usuario u) {
+        repo.delete(u);
     }
 
     public ArrayList<Usuario> getAllUsers() {
